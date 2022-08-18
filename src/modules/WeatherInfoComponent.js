@@ -8,11 +8,11 @@ import wind from "./../icons/wind.svg";
 import pressure from "./../icons/pressure.svg";
 
 export const WeatherInfoIcons = {
-    sunset: {sunset},
-    sunrise: {sunrise},
-    humidity: {humidity},
-    wind: {wind},
-    pressure: {pressure},
+    sunset: sunset,
+    sunrise: sunrise,
+    humidity: humidity,
+    wind: wind,
+    pressure: pressure,
 };
 const Location = styled.span`
   margin: 15px auto;
@@ -84,7 +84,7 @@ const WeatherInfoComponent = (props) => {
     const {name, value} = props;
     return (
         <InfoContainer>
-            <InfoIcon src={WeatherInfoIcons[name][name]}/>
+            <InfoIcon src={WeatherInfoIcons[name]}/>
             <InfoLabel>
                 {value}
                 <span>{name}</span>
@@ -104,7 +104,7 @@ const WeatherComponent = (props) => {
                 <Condition>
                     <span>{`${Math.floor(weather?.main?.temp - 273)}°C`}</span>
                     {`  |  ${weather?.weather[0].description}`}
-                </Condition>
+                </Condition>                
                 <WeatherIcon src={WeatherIcons[weather?.weather[0].icon]}/>
             </WeatherContainer>
             <Location>{`${weather?.name}, ${weather?.sys?.country}`}</Location>

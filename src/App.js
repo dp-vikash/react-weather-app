@@ -15,20 +15,20 @@ import pressure from "./icons/pressure.svg";
 import perfectDay from "./icons/perfect-day.svg";
 
 export const WeatherIcons = {
-  "01d": {sunny},
-  "01n": {night},
-  "02d": {day},
-  "02n": {cloudynight},
-  "03d": {cloudy},
-  "03n": {cloudy},
-  "04d": {perfectDay},
-  "04n": {cloudynight},
-  "09d": {rain},
-  "09n": {rainnight},
-  "10d": {rain},
-  "10n": {rainnight},
-  "11d": {storm},
-  "11n": {storm},
+  "01d": sunny,
+  "01n": night,
+  "02d": day,
+  "02n": cloudynight,
+  "03d": cloudy,
+  "03n": cloudy,
+  "04d": perfectDay,
+  "04n": cloudynight,
+  "09d": rain,
+  "09n": rainnight,
+  "10d": rain,
+  "10n": rainnight,
+  "11d": storm,
+  "11n": storm,
 };
 
 const Container = styled.div`
