@@ -18,12 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-<<<<<<< Updated upstream
     "eject": "react-scripts eject"
-=======
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap"
->>>>>>> Stashed changes
   },
   
   "eslintConfig": {
